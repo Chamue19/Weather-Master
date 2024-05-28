@@ -7,3 +7,5 @@ When serching weather for a location ,frontend look likes now and if give invali
 ![image](https://github.com/Chamue19/Weather-Master/assets/115542082/803f362a-e45b-4129-bfc6-d17bc8c4187a)
 
 
+I have used Two API 's in OenWeatherMap.org(https://openweathermap.org/api) for this project and combined those two.Which are "Current Weather Data" API and "Geocoding" API
+
