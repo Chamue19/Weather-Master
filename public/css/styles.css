@@ -1,0 +1,14 @@
+h2{
+    color: red;
+    
+
+}
+body{
+    background-color: #f4f4f4;
+    /* background-image: url('../img/background.jpg'); */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}

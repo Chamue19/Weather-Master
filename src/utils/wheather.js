@@ -13,7 +13,7 @@ const getwhether =(lat,lon)=>{
             //apit denn one console.log ekk neweii
             //console.log("currently "+response.data.weather[0].description+" and temperature is "+response.data.main.temp+"C" );
             resolve({               // 
-                wheatherData :'currently'+response.data.weather[0].description+' and temperature is '+response.data.main.temp+'C'})
+                wheatherData :'currently '+response.data.weather[0].description+' and temperature is '+response.data.main.temp+'C'})
                     // methn success unma wheatherdata object ek return krnwa
         
             // console.log(response.data);

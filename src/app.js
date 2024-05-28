@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const wheather = require('./utils/wheather.js');
  const geo = require('./utils/geo.js');
+ const hbs = require('hbs');
 
 
 
@@ -13,8 +14,18 @@ const wheather = require('./utils/wheather.js');
  //express() aniwryen mek gnn one
  const app = express();
 
+ const templatePath = path.join(__dirname,'../template');// tempalte ekt tyn path ek
+ // e wgem api navigation ektth path ek denn onee.. ek tyne partil athule
+ const partialsPath = path.join(__dirname,'../template/partial');// partials ekt tyn path ek
+
+//  dn ek hbs wlin register krnnth onee
+hbs.registerPartials(partialsPath);// partials ekt register krnn onee
+
+
   //hbs wl documnetation wl munlinm krnn one ewa
-  app.set('view engine','hbs');
+  app.set('view engine','hbs'); // dn mek ynne view ekt neweii template path ekat
+ app.set('views',templatePath);
+
 
   app.get('/',(req,res)=>{
     res.render('index');  //send neweii dn ekt kiynne render kiyala...render() method eka
@@ -57,7 +68,7 @@ app.get('/wheather',(req,res)=>{
     })
 
     }
-    console.log(); // mem awilla nettn methnin phlt ynne ne
+    // console.log(); // mem awilla nettn methnin phlt ynne ne
 })
 app.get('*',(req,res)=>{
     res.send('404 page not found');
