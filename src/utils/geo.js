@@ -18,7 +18,7 @@ const getLocation =(location)=>{
         .catch(function (error) {// handle error
             
             // console.log("enter the correct location name,this cand find");
-            reject({error:"enter the correct location name,this cand find"}) //methn error object ek return krnwa
+            reject({error:"enter the correct location name,this cant find"}) //methn error object ek return krnwa
         
         });
 
